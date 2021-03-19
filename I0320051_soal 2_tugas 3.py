@@ -1,19 +1,20 @@
 biodata = {'Nama':'Ilham Fairuzaman',
-            'Hobi':{1:'Menonton film',2:'Membaca komik',3:'Tidur'},
-            'Sosmed':{1:'@ilhamfairuzaman',2:'@ilhamahmasa',3:'Ilham Fairuzaman'},
-            'Lagu1':{1:'Sufjan Steven',2:'Iwan Fals',3:'Noah'},
-            'Makanan':{1:'Nasi goreng',2:'Pisang goreng',3:'Kebab'}}
-print('\nBiodata sebelum diproses :\n', biodata)
+            'Hobi':['Menonton film','Membaca komik','Tidur'],
+            'Sosmed':['@ilhamfairuzaman','@ilhamahmasa','Ilham Fairuzaman'],
+            'Lagu':['Sufjan Steven','Iwan Fals','Pamungkas'],
+            'Makanan':['Nasi goreng','Pisang goreng','Kebab']}
+print('\nBiodata sebelum diproses :\n\n', biodata)
+print('=========================')
 
-# Mengubah salah satu hobi
-biodata['Hobi'] = {1:'Menonton film',2:'Main game',3:'Dengerin musik'}
-biodata['Sosmed'] = {1:'082137899006',2:'@ilhamahmasa',3:'Ilham Fairuzaman'}
+# Mengubah salah satu hobi dan sosmed
+biodata['Hobi'][1] = "Bermain Game"
+biodata['Sosmed'][2] = "082137899006"
 
 # Menghapus 2 makanan favorit
-biodata['Makanan'] = 'Nasi goreng'
+del biodata['Makanan'][1:]
 
 # Menambah 1 hobi
-biodata['Hobi'] = {1:'Menonton film',2:'Main game',3:'Dengerin musik',4:'Baca komik'}
+biodata['Hobi'].append('Mendengarkan musik')
 
 # Menampilkan dictionary
-print('\nBiodata setelah diproses menjadi :\n', biodata)
+print('\nBiodata setelah diproses menjadi :\n\n', biodata)

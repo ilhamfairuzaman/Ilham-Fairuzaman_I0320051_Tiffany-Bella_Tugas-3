@@ -4,9 +4,9 @@ temen = ['ojat','alam','hani','afnan','raka',
 
 # Menampilkan isi list indeks 4 6 7
 print('')
-print(temen[4])
-print(temen[6])
-print(temen[7])
+print('nama teman pada indeks ke-4 = ', temen[4])
+print('nama teman pada indeks ke-6 = ', temen[6])
+print('nama teman pada indeks ke-7 = ', temen[7])
 
 # Mengganti nama teman pada indeks 3 5 9
 print('')
@@ -17,8 +17,7 @@ print(temen)
 
 # Menambah 2 teman
 print('')
-temen.append('ervizal')
-temen.append('rama')
+temen.extend(['Ervizal','rama'])
 print(temen)
 
 # Menampilkan semua nama teman dengan loop
